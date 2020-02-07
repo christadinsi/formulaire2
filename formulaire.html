@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="christ">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styleform.css">
+	<title>formulaire</title>
+</head>
+<body>
+	<main>
+   		<h1>Renseignements</h1>
+	    <form>
+		   	<fieldset>
+		   		<legend>Civilité</legend>
+		   		
+		   		     <label for="nom">Nom*</label> <input type="text" name="pseudo"  id="nom" autofocus required tabindex="1"><br><br>
+                     <label for="nom">Prénom *</label> <input type="text" name="pseudo"  id="nom" autofocus required tabindex="1"> 
+
+		   		      <br/><br/>
+		   		     <label for="pass">Mot de passe * </label><input type="password" name="pass" id="pass" tabindex="2"><br/><br/>
+		   		     <label for="adresse">Adresse*</label> <input type="email" name="email" id="adresse"required tabindex="3"><br><br>
+		   		<p>
+		   		sexe : <br>
+		   		     <input type="radio" name="genre" tabindex="4"> <label>Homme</label> 
+		   		     <input type="radio" name="genre" checked tabindex="5"> <label>Femme</label>
+		   		</p>
+	   	</fieldset>
+	   	<fieldset>
+	   		<legend>Formations</legend>
+	   		<p>
+	   			<label for="diplome"> Dernier diplome</label>:
+	   			<select name="diplome" id="diplome" tabindex="7">
+	   			<option value="Aucun" selected="Aucun">Aucun<option>
+	   			   <option value="Bac">Bac</option>	
+	   			   <option value="Bac3">Bac+1</option>
+	           <option value="Bac2">Bac+2</option>
+	   			   <option value="Bac3">Bac+3 </option>
+	   			   <option value="Master">Master</option>
+	   			   <option value="Doctorat">Doctorat</option>
+	   			</select>
+	   		</p> 
+	   		<p>
+	   			Centre d'interret:
+	   			<input type="checkbox" name="interet" checked="Musique" id="musique"> <label for="musique">Musique</label>
+				<input type="checkbox" name="interet" id="Sport"> <label for="Sport">Sport</label>
+	   			<input type="checkbox" name="interet" id="Lecture"> <label for="Lecture">Lecture</label>
+	   		</p>
+	     </fieldset>
+	     <fieldset>
+	  			 <legend>Commentaires</legend>
+	     	    
+	     	     <textarea name="commentaire" id="commentaire" rows="3" cols="30" maxlength="100" tabindex="6">
+	     	     </textarea>
+	     	     <br/>
+	     	    <p> <input type="checkbox" name="accepter">
+	     	     <label> J'accepte les conditions </label> </p><br/> <br/>
+	    <p> <input class="Envoyer" type="submit" value="Envoyer" name="bouton_envoyer"> </p>
+	   	</fieldset>
+	   </form>
+   </main>
+</body>
+</html>
